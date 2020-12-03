@@ -20,7 +20,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#" class="icon solid fa-home"><span>หน้าแรก</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
+						<a href="#work" class="icon solid fa-folder"><span>นักเตะ</span></a>
 						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
 						<a href="https://www.google.com/" class="icon brands fa-twitter"><span>Google</span></a>
 					</nav>
@@ -43,12 +43,12 @@
 						<!-- Work -->
 							<article id="work" class="panel">
 								<header>
-									<h2>Work</h2>
+									<h2>นักเตะ & โค้ช</h2>
 								</header>
 								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
+									สโมสรฟุตบอลแมนเชสเตอร์ยูไนเต็ด (อังกฤษ: Manchester United Football Club) เป็นสโมสรฟุตบอลตั้งอยู่ที่โอลด์แทรฟฟอร์ดในเกรเทอร์แมนเชสเตอร์ ประเทศอังกฤษ ปัจจุบันแข่งขันในพรีเมียร์ลีกซึ่งเป็นลีกสูงสุดของฟุตบอลอังกฤษ สโมสรมีฉายา "ปีศาจแดง" ก่อตั้งในชื่อสโมสรฟุตบอลนิวตันฮีตแอลวายอาร์ใน ค.ศ. 1878 ต่อมาเปลี่ยนชื่อเป็นแมนเชสเตอร์ยูไนเต็ดใน ค.ศ. 1902 และย้ายไปเล่นที่สนามเหย้าปัจจุบันอย่างโอลด์แทรฟฟอร์ดใน ค.ศ. 1910
+
+แมนเชสเตอร์ยูไนเต็ดชนะเลิศถ้วยรางวัลมากกว่าสโมสรอื่นในฟุตบอลอังกฤษ โดยชนะเลิศลีก 20 สมัย ซึ่งเป็นสถิติสูงสุด, เอฟเอคัพ 12 สมัย, ลีกคัพ 5 สมัย และเอฟเอคอมมิวนิตีชีลด์ 21 สมัย ซึ่งก็เป็นสถิติสูงสุดเช่นกัน ยูไนเต็ดยังชนะเลิศยูฟ่าแชมเปียนส์ลีก 3 สมัย, ยูฟ่ายูโรปาลีก 1 สมัย, ยูฟ่าคัพวินเนอร์สคัพ 1 สมัย, ยูฟ่าซูเปอร์คัพ 1 สมัย, อินเตอร์คอนติเนนตัลคัพ 1 สมัย และฟุตบอลชิงแชมป์สโมสรโลก 1 สมัย โดยในฤดูกาล 1998–99 สโมสรกลายเป็นทีมแรกในประวัติศาสตร์ฟุตบอลอังกฤษที่คว้าทริปเปิลแชมป์ระดับทวีปยุโรปและในฤดูกาล 2016–17 หลังจากที่ชนะเลิศยูฟ่ายูโรปาลีก พวกเขากลายเป็นหนึ่งในห้าสโมสรที่ชนะเลิศการแข่งขันของยูฟ่าครบทั้งสามรายการ
 								</p>
 								<section>
 									<div class="row">
@@ -95,29 +95,27 @@
 						<!-- Contact -->
 							<article id="contact" class="panel">
 								<header>
-									<h2>Contact Me</h2>
+									<h2>ค้นหาเกี่ยวกับ Manchester United</h2>
 								</header>
-								<form action="#" method="post">
+								
 									<div>
 										<div class="row">
+										
 											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
+												<input type="text" name = "name" id = "name" placeholder="ค้นหา" />
 											</div>
 											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
+												<input type="submit" onclick="search()" value="ค้นหา"/>
 											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
+											<script>
+												function search(){
+													var text = document.getElementById("name").value;
+													window.location.href = "https://www.google.com/search?ei=z_3IX861BNasrQHHqY7oBQ&q=" + text;
+												}
+											</script>
 										</div>
 									</div>
-								</form>
+								
 							</article>
 
 					</div>
